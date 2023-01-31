@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Print the values of i  from 1 to 20 and bad luck form China, bad luck from Japan, bad luck from Italy when immediatly after 4 , 9  and 17.
+i=20
+while ["$i" -le 20 ] 
+do
+	echo "$i"
+	case $i in
+		4) echo "bad luck from China" ;;
+		9) echo "bad luck from Japan" ;;
+		17) echo "bad lkuck from Italy" ;;
+	esac
+	(( i++ ))
+done
